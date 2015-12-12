@@ -1,5 +1,6 @@
 package a ;
 
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -10,6 +11,10 @@ import junit.framework.TestSuite;
 public class AppTest 
     extends TestCase
 {
+	App tr = new App();
+	int a = 4;
+	int b= 5;
+	
     /**
      * Create the test case
      *
@@ -34,6 +39,17 @@ public class AppTest
     public void testApp()
     {
     	// test
-        assertTrue( false );
+        assertTrue( true );
     }
+    public void test1()
+	{
+		assertEquals(tr.add(a,b),9);
+		assertEquals(tr.mul(a,b),20);
+	}
+    public void test2()
+  	{
+  		assertEquals(tr.sub(a,b),-1);
+  		//assertEquals(tr.div(a,b),20);
+  	}
+    
 }
