@@ -16,6 +16,7 @@ public class RechnerTest extends TestCase {
 	int b = 5;
 	int c = -1;
 	int d= -3 ;
+	int e = 10;
 
 	/**
 	 * Create the test case
@@ -117,6 +118,13 @@ public class RechnerTest extends TestCase {
 			System.out.println("Wrong number format");
 
 		}
+	}
+	public void testMod()
+	{
+		tr.setA(e);
+		tr.setB(b);
+		tr.setOp("%");
+		assertEquals(tr.getRes(),0);
 	}
 	
 
